@@ -7,7 +7,7 @@ Web service who return header images for special days (Halloween,Christmas,etc).
 
 for mobile use
 
-	<img src="http://web_service_ip:8080/" width=100%</img>
+	 <img src="http://web_service_ip:8080/" width=100%</img>
 
 Note that the images need to be jpg format.
 
