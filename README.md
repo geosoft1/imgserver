@@ -9,6 +9,6 @@ for mobile use
 
 	 <img src="http://web_service_ip:8080/" width=100%</img>
 
-Note that the images need to be jpg format.
+Note that the images need to be jpg format. Place them in the `/img` folder.
 
 To compile the program use this [tools](https://github.com/geosoft1/tools). See [here](https://github.com/geosoft1/tools/wiki) how to.
