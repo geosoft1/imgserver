@@ -46,11 +46,6 @@ func index(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	// Discourse Admin:Customize:CSS/HTML:Top
-	// <!--img src="http://192.168.88.223:8080/" height=150px></img-->
-	// Mobile:Top
-	// <!--img src="http://192.168.88.223:8080/" width=100%</img-->
-
 	http.HandleFunc("/", index)
 	http.ListenAndServe(":8080", nil)
 }
