@@ -33,7 +33,6 @@ func init() {
 	if err != nil {
 		os.Exit(1)
 	}
-
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
