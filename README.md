@@ -13,4 +13,4 @@ Remember to adjust physical images at proper width and height. Do not use width 
 
 At every request the service find an image named after the current day. If not found return a standard 1px image otherwise return the proper special day image.
 
-To compile the program use this [tools](https://github.com/geosoft1/tools). See [here](https://github.com/geosoft1/tools/wiki) how to. Put it on server with [cloud tool](https://github.com/geosoft1/tools/wiki/Cloud-tool)
+To compile the program use this [tools](https://github.com/geosoft1/tools). See [here](https://github.com/geosoft1/tools/wiki) how to. Quick deploy on server with [cloud tool](https://github.com/geosoft1/tools/wiki/Cloud-tool).
