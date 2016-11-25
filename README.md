@@ -7,7 +7,7 @@ Web service who return header images for special days (Halloween,Christmas,etc).
 
 Note that the images need to be jpg format. Place them in the `/img` folder. Call them after the special day number and month number (e.g. `3110.jpg` mean day `31` month `10` - Halloween).
 
-Remember to adjust physical images at proper width and height. Do not use with and height in `img` tag.
+Remember to adjust physical images at proper width and height. Do not use width and height in `img` tag.
 
 ## How it works?
 
