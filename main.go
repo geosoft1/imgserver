@@ -21,8 +21,20 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 	"time"
 )
+
+var pwd string
+var err error
+
+func init() {
+	pwd, err = filepath.Abs(filepath.Dir(os.Args[0]))
+	if err != nil {
+		os.Exit(1)
+	}
+
+}
 
 func index(w http.ResponseWriter, r *http.Request) {
 	//CORS response (http://www.html5rocks.com/en/tutorials/cors/)
@@ -31,10 +43,10 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 	now := time.Now()
 
-	filename := "img/" + now.Format("0201") + ".jpg"
+	filename := pwd + "/img/" + now.Format("0201") + ".jpg"
 
 	if _, err := os.Stat(filename); os.IsNotExist(err) {
-		filename = "img/Untitled.jpg"
+		filename = pwd + "/img/1.jpg"
 	}
 
 	log.Println(filename)
