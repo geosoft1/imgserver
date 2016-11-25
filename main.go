@@ -32,11 +32,13 @@ func index(w http.ResponseWriter, r *http.Request) {
 	now := time.Now()
 
 	filename := "img/" + now.Format("0201") + ".jpg"
-	log.Println(filename)
 
 	if _, err := os.Stat(filename); os.IsNotExist(err) {
-		filename = "Untitled.jpg"
+		filename = "img/Untitled.jpg"
 	}
+
+	log.Println(filename)
+
 	file, err := ioutil.ReadFile(filename)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusNotFound)
