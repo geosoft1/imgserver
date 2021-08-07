@@ -1,7 +1,7 @@
 imgserver
 ====
 
-Web service who return header images for special days (Halloween,Christmas,etc). For using with Discourse add the follow code at CSS/HTML:Top
+Web service wich returns header images for special days (Halloween,Christmas,etc). To use with Discourse add the follow code at CSS/HTML:Top
 
      <p><img src="http://web_service_ip:8080"></img></p>
 
